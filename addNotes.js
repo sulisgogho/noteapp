@@ -45,5 +45,5 @@ btnSave.addEventListener("click", () => {
 
   localStorage.setItem("listItem", JSON.stringify(notes));
   alert("Note sudah tersimpan!!");
-  window.location.href = "note.html";
+  window.location.href = "index.html";
 });

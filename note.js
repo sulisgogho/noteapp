@@ -3,7 +3,6 @@ const containerList = document.querySelector("#container-list");
 const searchInput = document.querySelector("#input");
 const btnTambah = document.querySelector("#btn-tambah");
 
-
 btnAdd.addEventListener("click", () => {
   window.location.href = "addNotes.html";
 });
@@ -39,10 +38,10 @@ const loadNotes = () => {
 
     containerNotes.classList.add("w-42", "md:w-70", "max-h-60", "md:h-[50vh]", "bg-[#F6F8D5]", "p-4", "rounded-2xl", "flex", "flex-col", "gap-y-3", "shadow-md");
     headContainer.classList.add("flex", "flex-row", "justify-between");
-    title.classList.add("text-[#205781]", "font-bold","text-md" , "md:text-lg", "line-clamp-1");
+    title.classList.add("text-[#205781]", "font-bold", "text-base", "md:text-lg", "line-clamp-1");
     containerParagraf.classList.add("max-h-90", "overflow-hidden");
-    paragraf.classList.add("text-[#205781]","text-sm","md:text-base", "line-clamp-5");
-    date.classList.add("text-[#205781]", "text-xs","md:text-sm", "bg-[#98D2C0]", "p-1", "rounded-full", "text-center");
+    paragraf.classList.add("text-[#205781]", "text-sm", "md:text-base", "line-clamp-5");
+    date.classList.add("text-[#205781]", "text-xs", "md:text-sm", "bg-[#98D2C0]", "p-1", "rounded-full", "text-center");
     actionContainer.classList.add("flex", "justify-center", "gap-1", "md:gap-2", "flex-shrink-0", "p-1");
     editButton.classList.add("text-sm", "bg-yellow-400", "px-1", "md:px-3", "rounded-full", "text-white", "hover:bg-yellow-500");
     deleteButton.classList.add("text-sm", "bg-red-500", "px-1", "md:px-3", "rounded-full", "text-white", "hover:bg-red-600");
